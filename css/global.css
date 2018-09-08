@@ -63,6 +63,10 @@ header {
 	text-decoration: underline;
 }
 
+.nav li a:visited {
+	color: #FFF;
+}
+
 #logo {
 	margin: 1em;
 }
@@ -137,6 +141,24 @@ header {
 
 .destInfo h2 {
 	margin: 0.5em 0 0.5em 0;
+}
+
+.moreInfo {
+	display: block;
+	color: #9E825A;
+	margin-top: 1em;
+}
+
+.moreInfo a {
+	text-decoration: none;
+}
+
+.moreInfo a:hover {
+	text-decoration: underline;
+}
+
+.moreInfo a:visited {
+	color: #9E825A;
 }
 
 /* Buttons */
