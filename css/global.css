@@ -1,0 +1,118 @@
+/* Universal */
+
+html {
+	width: 100%;
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: normal;
+	background-color: #FFF;
+}
+
+body {
+	background-color: #FFE5C4;
+	width: 80%;
+	margin: 0 auto 0 auto;
+	height: 100%;
+	display: flex;
+	align-content: : center;
+	flex-flow: column nowrap;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+/* Header */
+
+header {
+	background-color: #4A809E;
+}
+
+.navbar {
+	flex-flow: column nowrap;
+	display: flex;
+}
+
+.nav {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.nav li {
+	margin: 1em;
+}
+
+.nav li a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.nav li a:hover {
+	text-decoration: underline;
+}
+
+#logo {
+	margin: 1em;
+}
+
+#logo h1 {
+	color: #EBCAA0;
+}
+
+#logo h1 span {
+	color: #FFE5C4;
+}
+
+/* Banner */
+
+.banner {
+	width: 85%;
+	align-self: center;
+	align-content: center;
+	flex-flow: column nowrap;
+}
+
+.page-desc {
+	margin: 1em;
+}
+
+.page-desc h1 {
+	margin: 1em 0 1em 0;
+}
+
+.gallery {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 1em;
+	align-items: center;
+}
+
+.gallery img {
+	width: 45%;
+	object-fit: cover;
+	height: 100%;
+}
+
+/* Content (Home) */
+
+#stays {
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: center;
+}
+
+.holidayDest {
+	width: 80%;
+}
+
+.photo {
+	width: 85%;
+}
