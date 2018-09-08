@@ -106,13 +106,37 @@ header {
 #stays {
 	display: flex;
 	flex-flow: column nowrap;
-	align-content: center;
+	align-items: center;
 }
 
 .holidayDest {
-	width: 80%;
+	width: 85%;
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+	background-color: #9DCEEB;
+	margin: 2.5em 0 2.5em 0;
+	border-radius: 5px;
 }
 
 .photo {
 	width: 85%;
+	margin: 4em 0 1em 0;
+	border-radius: 2.5px;
+}
+
+.destInfo {
+	width: 85%;
+	margin: 1em 0 2.5em 0;
+}
+
+.destInfo h2 {
+	margin: 0.5em 0 0.5em 0;
+}
+
+/* Buttons */
+
+.loadButton {
+	width: 85%;
+	justify-content: flex-start;
 }
