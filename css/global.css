@@ -2,9 +2,9 @@
 
 html {
 	width: 100%;
-	font-size: 16px;
-	font-family: Arial;
-	font-weight: normal;
+	font-size: 20px;
+	font-family: 'Assistant', sans-serif;
+	font-weight: 400;
 	background-color: #FFF;
 }
 
@@ -33,11 +33,15 @@ img {
 	border: 1px solid #9E825A;
 }
 
+a {
+	font-size: 20px;
+}
 
 /* Header */
 
 header {
 	background-color: #4A809E;
+	margin-bottom: 4em;
 }
 
 .navbar {
@@ -68,11 +72,14 @@ header {
 }
 
 #logo {
-	margin: 1em;
+	margin: 1em 1em 0em 1em;
 }
 
 #logo h1 {
+	font-family: 'Bilbo', cursive;
 	color: #EBCAA0;
+	font-size: 72px;
+	font-weight: bolder;
 }
 
 #logo h1 span {
@@ -88,10 +95,6 @@ header {
 	flex-flow: column nowrap;
 }
 
-.page-desc {
-	margin: 1em;
-}
-
 .page-desc h1 {
 	margin: 1em 0 1em 0;
 }
@@ -100,7 +103,7 @@ header {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin: 1em;
+	margin: 2em 0 1em 0;
 	align-items: center;
 }
 
