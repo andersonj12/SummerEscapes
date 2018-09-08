@@ -16,6 +16,7 @@ body {
 	display: flex;
 	align-content: : center;
 	flex-flow: column nowrap;
+	border: 1px solid #9E825A;
 }
 
 h1 {
@@ -26,6 +27,10 @@ h1 {
 h2 {
 	font-size: 24px;
 	font-weight: bold;
+}
+
+img {
+	border: 1px solid #9E825A;
 }
 
 
@@ -139,4 +144,30 @@ header {
 .loadButton {
 	width: 85%;
 	justify-content: flex-start;
+}
+
+.loadButton button {
+	background-color: #4A809E;
+	padding: 0.5em 1.5em 0.5em 1.5em;
+	border-style: none;
+	font-size: 16px;
+	color: #FFF;
+  border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	background-color: #4A809E;
+	margin-top: 5em;
+	height: 75px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.copyright {
+	color: #FFF;
+	font-size: 12px;
+	margin: 50px 15px 0 0;
 }
