@@ -104,7 +104,7 @@ header {
 	margin: 1em 0 1em 0;
 }
 
-#gallery {
+.gallery {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -112,10 +112,33 @@ header {
 	align-items: center;
 }
 
-#gallery img {
+.gallery img {
 	width: 45%;
 	object-fit: cover;
 	height: 100%;
+}
+
+#feedbackBanner {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#feedbackBanner .page-desc {
+	width: 60%;
+}
+
+#feedbackBanner .page-desc h1 {
+	margin-top: 0;
+}
+
+#feedbackBanner .gallery {
+	width: 30%;
+}
+
+#feedbackBanner .gallery img {
+	width: 100%;
 }
 
 /* Content (Home) */
@@ -234,6 +257,21 @@ header {
 	padding: 0.5em 1em 0.5em 1em;
 	color: #FFF;
 	margin-right: 1em;
+}
+
+/* Content (Feedback */
+
+#feedbackForm {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	flex-flow: column nowrap;
 }
 
 /* Buttons */

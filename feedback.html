@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700|Bilbo" rel="stylesheet" />
   </head>
 
   <body>
@@ -33,7 +34,7 @@
     <!-- Banner -->
     <section class="banner" id="feedbackBanner">
       <div class="page-desc">
-        <h1>???</h1>
+        <h1>Tell us your thoughts!</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit risus facilisi, cursus tempus duis enim ligula ac convallis sociis varius sollicitudin, pharetra et praesent</p>
       </div>
       <aside class="gallery no-mobile">
@@ -45,29 +46,31 @@
     <section class="content" id="feedbackForm">
       <form action="/action_page.php" method="get">
 
-        <label>How likely are you to recommend Summer Escapes to a freind or colleague?</label>
-        <input type="radio" name="recommondation" id="highest" value="highest" />Very Likely<br />
-        <input type="radio" name="recommondation" id="high" value="high" />Likely<br />
-        <input type="radio" name="recommondation" id="low" value="low" />Unlikely<br />
-        <input type="radio" name="recommondation" id="lowest" value="lowest" />Highly Unlikely<br />
+        <div class="input-field">
+          <h3>How likely are you to recommend Summer Escapes to a freind or colleague?</h3>
+          <input type="radio" name="recommondation" id="highest" value="highest" /><label>Very Likely</label>
+          <input type="radio" name="recommondation" id="high" value="high" /><label>Very Likely</label>
+          <input type="radio" name="recommondation" id="low" value="low" /><label>Very Likely</label>
+          <input type="radio" name="recommondation" id="lowest" value="lowest" /><label>Very Likely</label>
+        </div>
 
-        <label for="textReview">Write a Quick Review</label>
-        <textarea id="textReview">
-          Write a review...
-        </textarea>
+        <div class="input-field">
+          <h3>???</h3>
+          <input type="checkbox" class="select" />
+          <input type="checkbox" class="select" />
+          <input type="checkbox" class="select" />
+          <input type="checkbox" class="select" />
+        </div>
 
-        <label>???</label>
-        <input type="checkbox" class="select" />???<br />
-        <input type="checkbox" class="select" />???<br />
-        <input type="checkbox" class="select" />???<br />
-        <input type="checkbox" class="select" />???<br />
+        <div class="input-field">
+          <label for="textReview">Write a Quick Review</label>
+          <textarea id="textReview" required >
+            Write a review...
+          </textarea>
+        </div>
 
-        <label>How would you rate our website from overall?</label>
-        <input type="radio" name="rating" id="5" value="5" />5<br />
-        <input type="radio" name="rating" id="4" value="4" />4<br />
-        <input type="radio" name="rating" id="3" value="3" />3<br />
-        <input type="radio" name="rating" id="2" value="2" />2<br />
-        <input type="radio" name="rating" id="1" value="1" />1<br />
+        <h3>How would you rate our website from 1 to 5?</h3>
+        <input type="text" name="rating" pattern="[1-5]" maxlength="1" required />
 
         <input type="submit" value="Submit" />
 
