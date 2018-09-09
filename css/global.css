@@ -25,6 +25,11 @@ h1 {
 }
 
 h2 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+h3 {
 	font-size: 24px;
 	font-weight: bold;
 }
@@ -71,18 +76,18 @@ header {
 	color: #FFF;
 }
 
-#logo {
+.logo {
 	margin: 1em 1em 0em 1em;
 }
 
-#logo h1 {
+.logo h1 {
 	font-family: 'Bilbo', cursive;
 	color: #EBCAA0;
 	font-size: 72px;
 	font-weight: bolder;
 }
 
-#logo h1 span {
+.logo h1 span {
 	color: #FFE5C4;
 }
 
@@ -99,7 +104,7 @@ header {
 	margin: 1em 0 1em 0;
 }
 
-.gallery {
+#gallery {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -107,7 +112,7 @@ header {
 	align-items: center;
 }
 
-.gallery img {
+#gallery img {
 	width: 45%;
 	object-fit: cover;
 	height: 100%;
@@ -115,7 +120,7 @@ header {
 
 /* Content (Home) */
 
-#stays {
+.content {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
@@ -164,6 +169,58 @@ header {
 	color: #9E825A;
 }
 
+/* Content (Reviews) */
+
+.item {
+	padding: 2em 0 2em 0;
+	width: 85%;
+	background-color: #9DCEEB;
+	margin: 2.5em 0 2.5em 0;
+	border-radius: 5px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.rev-photo {
+	width: 45%;
+	border-radius: 2.5px;
+}
+
+.subject-info {
+	width: 90%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin-bottom: 1em;
+	background-color: #4A809E;
+	border-radius: 5px;
+	padding: 1em 0 1em 0;
+}
+
+.info-list {
+	width: 45%;
+	margin-top: auto;
+	color: #FFE5C4;
+}
+
+.info-list h2 {
+	margin-bottom: 0.5em;
+}
+
+.info-list p {
+	line-height: 1.5
+}
+
+.review {
+	width: 90%;
+	margin: 1em 0 1em 0;
+}
+
+.review h3 {
+	margin-bottom: 0.5em;
+}
+
 /* Buttons */
 
 .loadButton {
@@ -195,4 +252,6 @@ footer {
 	color: #FFF;
 	font-size: 12px;
 	margin: 50px 15px 0 0;
+	font-weight: lighter;
+	opacity: 0.5;
 }

@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700|Bilbo" rel="stylesheet" />
   </head>
 
   <body>
@@ -16,7 +17,7 @@
     <!-- Navigation -->
     <header>
       <section class="navbar">
-        <div id="logo">
+        <div class="logo">
           <h1>Summer<span>Escapes</span></h1>
         </div>
         <nav>
@@ -33,33 +34,35 @@
     <!-- Page Banner -->
     <section class="banner" id="reviewsBanner">
       <div class="page-desc">
-        <h1>???</h1>
+        <h1>Read the reviews of fellow holiday goers</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, platea fringilla blandit libero viverra felis penatibus lacinia, vulputate litora cubilia tempus erat interdum.</p>
       </div>
     </section>
 
     <!-- Content -->
-    <section class="dest-reviews">
+    <section class="content" id="dest-reviews">
 
       <article class="item">
-        <div class="rev-image">
-          <img src="images/house1.jpg" />
-        </div>
-        <div class="dest-info">
-          <h2>???</h2>
-          <p>
-            ???: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-            ???: Nisi cubilia consequat non potenti, mollis vitae fringilla.<br />
-            ???: Maecenas conubia sollicitudin facilisi tempor habitant, phasellus augue malesuada.
+        <div class="subject-info">
+          <img class="rev-photo" src="images/house1.jpg" />
+          <div class="info-list">
+            <h2>House 1</h2>
+            <p>
+              <span class="list-header">Point 1:</span> Venmo farm-to-table hashtag 3 wolf moon.<br />
+              <span class="list-header">Point 2:</span> Meggings tilde migas polaroid bicycle.<br />
+              <span class="list-header">Point 3:</span> Occupy literally PBR&B.
+            </p>
+          </diV>
         </div>
         <div class="review">
+          <h3>Headline</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit id cursus nulla dis, pulvinar tortor mollis ante non tellus conubia vitae facilisi sociis luctus, venenatis praesent scelerisque magnis aliquet laoreet inceptos leo faucibus auctor. Magnis proin odio at justo vehicula iaculis sagittis neque, sociosqu rhoncus a turpis accumsan donec eget id porta, himenaeos duis vulputate condimentum faucibus vivamus lacinia. Dictum cum molestie ultricies feugiat laoreet porttitor venenatis felis platea pharetra pellentesque consequat, cursus fringilla nascetur maecenas iaculis diam vestibulum vehicula neque in aptent. Condimentum libero proin in sed urna iaculis nec nullam justo class, elementum etiam est pulvinar senectus habitant turpis vitae platea.<br />
 
 Mus sagittis malesuada ligula ut taciti suspendisse metus sem aliquet facilisi convallis, conubia enim senectus commodo hendrerit fusce id nunc sociis nisi. Convallis sagittis dictumst fames etiam iaculis maecenas aliquam, congue sapien ut metus potenti nisi varius, vestibulum fusce ad vehicula inceptos fermentum. Nisl accumsan montes venenatis cras luctus donec aptent magna, ligula sed primis mollis posuere volutpat ornare. Hac cursus semper facilisis id porttitor imperdiet erat integer, nostra quis sapien leo pharetra ut malesuada praesent donec, eleifend platea himenaeos velit justo odio vulputate.
           </p>
         </div>
-        <div class="buttons">
+        <div class="button-list">
           <button class="subjectReviews">
             <p>Read More Reviews</p>
           </button>
@@ -71,142 +74,157 @@ Mus sagittis malesuada ligula ut taciti suspendisse metus sem aliquet facilisi c
       </article>
 
       <article class="item">
-        <div class="rev-image">
-          <img src="images/house2.jpg" />
-        </div>
-        <div class="dest-info">
-          <h2>???</h2>
-          <p>
-            ???: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-            ???: Nisi cubilia consequat non potenti, mollis vitae fringilla.<br />
-            ???: Maecenas conubia sollicitudin facilisi tempor habitant, phasellus augue malesuada.
+        <div class="subject-info">
+          <img class="rev-photo" src="images/house2.jpg" />
+          <div class="info-list">
+            <h2>House 2</h2>
+            <p>
+              <span class="list-header">Point 1:</span> Venmo farm-to-table hashtag 3 wolf moon.<br />
+              <span class="list-header">Point 2:</span> Meggings tilde migas polaroid bicycle.<br />
+              <span class="list-header">Point 3:</span> Occupy literally PBR&B.
+            </p>
+          </div>
         </div>
         <div class="review">
+          <h3>Headline</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit id cursus nulla dis, pulvinar tortor mollis ante non tellus conubia vitae facilisi sociis luctus, venenatis praesent scelerisque magnis aliquet laoreet inceptos leo faucibus auctor. Magnis proin odio at justo vehicula iaculis sagittis neque, sociosqu rhoncus a turpis accumsan donec eget id porta, himenaeos duis vulputate condimentum faucibus vivamus lacinia. Dictum cum molestie ultricies feugiat laoreet porttitor venenatis felis platea pharetra pellentesque consequat, cursus fringilla nascetur maecenas iaculis diam vestibulum vehicula neque in aptent. Condimentum libero proin in sed urna iaculis nec nullam justo class, elementum etiam est pulvinar senectus habitant turpis vitae platea.<br />
 
 Mus sagittis malesuada ligula ut taciti suspendisse metus sem aliquet facilisi convallis, conubia enim senectus commodo hendrerit fusce id nunc sociis nisi. Convallis sagittis dictumst fames etiam iaculis maecenas aliquam, congue sapien ut metus potenti nisi varius, vestibulum fusce ad vehicula inceptos fermentum. Nisl accumsan montes venenatis cras luctus donec aptent magna, ligula sed primis mollis posuere volutpat ornare. Hac cursus semper facilisis id porttitor imperdiet erat integer, nostra quis sapien leo pharetra ut malesuada praesent donec, eleifend platea himenaeos velit justo odio vulputate.
           </p>
         </div>
-        <div class="buttons">
+        <div class="button-list">
           <button class="subjectReviews">
             <p>Read More Reviews</p>
           </button>
           <button class="writeReview">
             <p>Write a Review</p>
           </button>
+        </div>
         </div>
       </article>
 
       <article class="item">
-        <div class="rev-image">
-          <img src="images/house3.jpeg" />
-        </div>
-        <div class="dest-info">
-          <h2>???</h2>
-          <p>
-            ???: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-            ???: Nisi cubilia consequat non potenti, mollis vitae fringilla.<br />
-            ???: Maecenas conubia sollicitudin facilisi tempor habitant, phasellus augue malesuada.
+        <div class="subject-info">
+          <img class="rev-photo" src="images/house3.jpeg" />
+          <div class="info-list">
+            <h2>House 3</h2>
+            <p>
+              <span class="list-header">Point 1:</span> Venmo farm-to-table hashtag 3 wolf moon.<br />
+              <span class="list-header">Point 2:</span> Meggings tilde migas polaroid bicycle.<br />
+              <span class="list-header">Point 3:</span> Occupy literally PBR&B.
+            </p>
+          </div>
         </div>
         <div class="review">
+          <h3>Headline</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit id cursus nulla dis, pulvinar tortor mollis ante non tellus conubia vitae facilisi sociis luctus, venenatis praesent scelerisque magnis aliquet laoreet inceptos leo faucibus auctor. Magnis proin odio at justo vehicula iaculis sagittis neque, sociosqu rhoncus a turpis accumsan donec eget id porta, himenaeos duis vulputate condimentum faucibus vivamus lacinia. Dictum cum molestie ultricies feugiat laoreet porttitor venenatis felis platea pharetra pellentesque consequat, cursus fringilla nascetur maecenas iaculis diam vestibulum vehicula neque in aptent. Condimentum libero proin in sed urna iaculis nec nullam justo class, elementum etiam est pulvinar senectus habitant turpis vitae platea.<br />
 
 Mus sagittis malesuada ligula ut taciti suspendisse metus sem aliquet facilisi convallis, conubia enim senectus commodo hendrerit fusce id nunc sociis nisi. Convallis sagittis dictumst fames etiam iaculis maecenas aliquam, congue sapien ut metus potenti nisi varius, vestibulum fusce ad vehicula inceptos fermentum. Nisl accumsan montes venenatis cras luctus donec aptent magna, ligula sed primis mollis posuere volutpat ornare. Hac cursus semper facilisis id porttitor imperdiet erat integer, nostra quis sapien leo pharetra ut malesuada praesent donec, eleifend platea himenaeos velit justo odio vulputate.
           </p>
         </div>
-        <div class="buttons">
+        <div class="button-list">
           <button class="subjectReviews">
             <p>Read More Reviews</p>
           </button>
           <button class="writeReview">
             <p>Write a Review</p>
           </button>
+        </div>
         </div>
       </article>
 
       <article class="item">
-        <div class="rev-image">
-          <img src="images/resort1.jpg" />
-        </div>
-        <div class="dest-info">
-          <h2>???</h2>
-          <p>
-            ???: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-            ???: Nisi cubilia consequat non potenti, mollis vitae fringilla.<br />
-            ???: Maecenas conubia sollicitudin facilisi tempor habitant, phasellus augue malesuada.
+        <div class="subject-info">
+          <img class="rev-photo" src="images/resort1.jpg" />
+          <div class="info-list">
+            <h2>Resort 1</h2>
+            <p>
+              <span class="list-header">Point 1:</span> Venmo farm-to-table hashtag 3 wolf moon.<br />
+              <span class="list-header">Point 2:</span> Meggings tilde migas polaroid bicycle.<br />
+              <span class="list-header">Point 3:</span> Occupy literally PBR&B.
+            </p>
+          </div>
         </div>
         <div class="review">
+          <h3>Headline</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit id cursus nulla dis, pulvinar tortor mollis ante non tellus conubia vitae facilisi sociis luctus, venenatis praesent scelerisque magnis aliquet laoreet inceptos leo faucibus auctor. Magnis proin odio at justo vehicula iaculis sagittis neque, sociosqu rhoncus a turpis accumsan donec eget id porta, himenaeos duis vulputate condimentum faucibus vivamus lacinia. Dictum cum molestie ultricies feugiat laoreet porttitor venenatis felis platea pharetra pellentesque consequat, cursus fringilla nascetur maecenas iaculis diam vestibulum vehicula neque in aptent. Condimentum libero proin in sed urna iaculis nec nullam justo class, elementum etiam est pulvinar senectus habitant turpis vitae platea.<br />
 
 Mus sagittis malesuada ligula ut taciti suspendisse metus sem aliquet facilisi convallis, conubia enim senectus commodo hendrerit fusce id nunc sociis nisi. Convallis sagittis dictumst fames etiam iaculis maecenas aliquam, congue sapien ut metus potenti nisi varius, vestibulum fusce ad vehicula inceptos fermentum. Nisl accumsan montes venenatis cras luctus donec aptent magna, ligula sed primis mollis posuere volutpat ornare. Hac cursus semper facilisis id porttitor imperdiet erat integer, nostra quis sapien leo pharetra ut malesuada praesent donec, eleifend platea himenaeos velit justo odio vulputate.
           </p>
         </div>
-        <div class="buttons">
+        <div class="button-list">
           <button class="subjectReviews">
             <p>Read More Reviews</p>
           </button>
           <button class="writeReview">
             <p>Write a Review</p>
           </button>
+        </div>
         </div>
       </article>
 
       <article class="item">
-        <div class="rev-image">
-          <img src="images/resort2.jpg" />
-        </div>
-        <div class="dest-info">
-          <h2>???</h2>
-          <p>
-            ???: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-            ???: Nisi cubilia consequat non potenti, mollis vitae fringilla.<br />
-            ???: Maecenas conubia sollicitudin facilisi tempor habitant, phasellus augue malesuada.
+        <div class="subject-info">
+          <img class="rev-photo" src="images/resort2.jpg" />
+          <div class="info-list">
+            <h2>Resort 2</h2>
+            <p>
+              <span class="list-header">Point 1:</span> Venmo farm-to-table hashtag 3 wolf moon.<br />
+              <span class="list-header">Point 2:</span> Meggings tilde migas polaroid bicycle.<br />
+              <span class="list-header">Point 3:</span> Occupy literally PBR&B.
+            </p>
+          </div>
         </div>
         <div class="review">
+          <h3>Headline</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit id cursus nulla dis, pulvinar tortor mollis ante non tellus conubia vitae facilisi sociis luctus, venenatis praesent scelerisque magnis aliquet laoreet inceptos leo faucibus auctor. Magnis proin odio at justo vehicula iaculis sagittis neque, sociosqu rhoncus a turpis accumsan donec eget id porta, himenaeos duis vulputate condimentum faucibus vivamus lacinia. Dictum cum molestie ultricies feugiat laoreet porttitor venenatis felis platea pharetra pellentesque consequat, cursus fringilla nascetur maecenas iaculis diam vestibulum vehicula neque in aptent. Condimentum libero proin in sed urna iaculis nec nullam justo class, elementum etiam est pulvinar senectus habitant turpis vitae platea.<br />
 
 Mus sagittis malesuada ligula ut taciti suspendisse metus sem aliquet facilisi convallis, conubia enim senectus commodo hendrerit fusce id nunc sociis nisi. Convallis sagittis dictumst fames etiam iaculis maecenas aliquam, congue sapien ut metus potenti nisi varius, vestibulum fusce ad vehicula inceptos fermentum. Nisl accumsan montes venenatis cras luctus donec aptent magna, ligula sed primis mollis posuere volutpat ornare. Hac cursus semper facilisis id porttitor imperdiet erat integer, nostra quis sapien leo pharetra ut malesuada praesent donec, eleifend platea himenaeos velit justo odio vulputate.
           </p>
         </div>
-        <div class="buttons">
+        <div class="button-list">
           <button class="subjectReviews">
             <p>Read More Reviews</p>
           </button>
           <button class="writeReview">
             <p>Write a Review</p>
           </button>
+        </div>
         </div>
       </article>
 
       <article class="item">
-        <div class="rev-image">
-          <img src="images/resort3.jpg" />
-        </div>
-        <div class="dest-info">
-          <h2>???</h2>
-          <p>
-            ???: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-            ???: Nisi cubilia consequat non potenti, mollis vitae fringilla.<br />
-            ???: Maecenas conubia sollicitudin facilisi tempor habitant, phasellus augue malesuada.
+        <div class="subject-info">
+          <img class="rev-photo" src="images/resort3.jpg" />
+          <div class="info-list">
+            <h2>Resort 3</h2>
+            <p>
+              <span class="list-header">Point 1:</span> Venmo farm-to-table hashtag 3 wolf moon.<br />
+              <span class="list-header">Point 2:</span> Meggings tilde migas polaroid bicycle.<br />
+              <span class="list-header">Point 3:</span> Occupy literally PBR&B.
+            </p>
+          </div>
         </div>
         <div class="review">
+          <h3>Headline</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit id cursus nulla dis, pulvinar tortor mollis ante non tellus conubia vitae facilisi sociis luctus, venenatis praesent scelerisque magnis aliquet laoreet inceptos leo faucibus auctor. Magnis proin odio at justo vehicula iaculis sagittis neque, sociosqu rhoncus a turpis accumsan donec eget id porta, himenaeos duis vulputate condimentum faucibus vivamus lacinia. Dictum cum molestie ultricies feugiat laoreet porttitor venenatis felis platea pharetra pellentesque consequat, cursus fringilla nascetur maecenas iaculis diam vestibulum vehicula neque in aptent. Condimentum libero proin in sed urna iaculis nec nullam justo class, elementum etiam est pulvinar senectus habitant turpis vitae platea.<br />
 
 Mus sagittis malesuada ligula ut taciti suspendisse metus sem aliquet facilisi convallis, conubia enim senectus commodo hendrerit fusce id nunc sociis nisi. Convallis sagittis dictumst fames etiam iaculis maecenas aliquam, congue sapien ut metus potenti nisi varius, vestibulum fusce ad vehicula inceptos fermentum. Nisl accumsan montes venenatis cras luctus donec aptent magna, ligula sed primis mollis posuere volutpat ornare. Hac cursus semper facilisis id porttitor imperdiet erat integer, nostra quis sapien leo pharetra ut malesuada praesent donec, eleifend platea himenaeos velit justo odio vulputate.
           </p>
         </div>
-        <div class="buttons">
+        <div class="button-list">
           <button class="subjectReviews">
             <p>Read More Reviews</p>
           </button>
           <button class="writeReview">
             <p>Write a Review</p>
           </button>
+        </div>
         </div>
       </article>
 
