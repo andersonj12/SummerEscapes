@@ -46,31 +46,29 @@
     <section class="content" id="feedbackForm">
       <form action="/action_page.php" method="get">
 
-        <div class="input-field">
-          <h3>How likely are you to recommend Summer Escapes to a freind or colleague?</h3>
-          <input type="radio" name="recommondation" id="highest" value="highest" /><label>Very Likely</label>
-          <input type="radio" name="recommondation" id="high" value="high" /><label>Very Likely</label>
-          <input type="radio" name="recommondation" id="low" value="low" /><label>Very Likely</label>
-          <input type="radio" name="recommondation" id="lowest" value="lowest" /><label>Very Likely</label>
+        <label class="title" for="radio-buttons">How likely are you to recommend Summer Escapes to a friend or colleague?</label>
+        <div class="input-field" id="radio-buttons">
+          <input type="radio" name="recommondation" id="highest" value="highest" /><label for="highest">Very Likely</label><br />
+          <input type="radio" name="recommondation" id="high" value="high" /><label for="high">Likely</label><br />
+          <input type="radio" name="recommondation" id="low" value="low" /><label for="low">Unlikely</label><br />
+          <input type="radio" name="recommondation" id="lowest" value="lowest" /><label for="lowest">Very Unlikely</label>
         </div>
 
         <div class="input-field">
-          <h3>???</h3>
-          <input type="checkbox" class="select" />
-          <input type="checkbox" class="select" />
-          <input type="checkbox" class="select" />
-          <input type="checkbox" class="select" />
+          <label class="title" for="textReview">Write a Quick Review</label>
+          <textarea id="textReview" cols="25s" required >Write a review...</textarea>
         </div>
 
         <div class="input-field">
-          <label for="textReview">Write a Quick Review</label>
-          <textarea id="textReview" required >
-            Write a review...
-          </textarea>
+          <label class="title" for="select">How would you rate our website from 1 to 5?</label>
+          <select id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </div>
-
-        <h3>How would you rate our website from 1 to 5?</h3>
-        <input type="text" name="rating" pattern="[1-5]" maxlength="1" required />
 
         <input type="submit" value="Submit" />
 

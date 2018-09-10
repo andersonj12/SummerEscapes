@@ -266,12 +266,21 @@ header {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+	margin-top: 2em;
+}
+
+#feedbackForm div {
+	margin: 1em 0 1em 0;
 }
 
 form {
 	display: flex;
 	justify-content: center;
 	flex-flow: column nowrap;
+}
+
+.title {
+	font-weight: bold;
 }
 
 /* Buttons */
