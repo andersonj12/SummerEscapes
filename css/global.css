@@ -358,7 +358,7 @@ form {
 .socialMedia {
 	display: flex;
 	flex-flow: row nowrap;
-	width: 50%;
+	width: 66.67%;
 	align-self: center;
 	justify-content: flex-end;
 	margin-top: 2em;
