@@ -46,17 +46,19 @@
     <section class="content" id="feedbackForm">
       <form action="/action_page.php" method="get">
 
-        <label class="title" for="radio-buttons">How likely are you to recommend Summer Escapes to a friend or colleague?</label>
-        <div class="input-field" id="radio-buttons">
-          <input type="radio" name="recommondation" id="highest" value="highest" /><label for="highest">Very Likely</label><br />
-          <input type="radio" name="recommondation" id="high" value="high" /><label for="high">Likely</label><br />
-          <input type="radio" name="recommondation" id="low" value="low" /><label for="low">Unlikely</label><br />
-          <input type="radio" name="recommondation" id="lowest" value="lowest" /><label for="lowest">Very Unlikely</label>
+        <div class="input-field">
+          <label class="title" for="radio-buttons">How likely are you to recommend Summer Escapes to a friend or colleague?</label>
+          <ul id="radio-buttons">
+            <li><input type="radio" name="recommondation" id="high" value="high" checked="checked" /><label for="highest">Very Likely</label></li>
+            <li><input type="radio" name="recommondation" id="high" value="high" /><label for="high">Likely</label></li>
+            <li><input type="radio" name="recommondation" id="low" value="low" /><label for="low">Unlikely</label></li>
+            <li><input type="radio" name="recommondation" id="lowest" value="lowest" /><label for="lowest">Very Unlikely</label></li>
+          </ul>
         </div>
 
         <div class="input-field">
           <label class="title" for="textReview">Write a Quick Review</label>
-          <textarea id="textReview" cols="25s" required >Write a review...</textarea>
+          <textarea id="textReview" cols="25s" placeholder="Write a review..." required></textarea>
         </div>
 
         <div class="input-field">
@@ -66,11 +68,13 @@
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="5" selected>5</option>
           </select>
         </div>
 
-        <input type="submit" value="Submit" />
+        <div id="submitButton">
+          <input id="submit" type="submit" value="Submit" />
+        </div>
 
       </form>
     </section>
