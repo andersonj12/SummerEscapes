@@ -3,7 +3,7 @@
   <head>
     <title>Summer Escapes - Feedback</title>
     <meta charset="utf8" />
-    <meta name="description" content="???" />
+    <meta name="description" content="Tell us your thoughts!" />
     <meta name="author" content="Jamie Muirhead" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -15,7 +15,7 @@
   <body>
 
     <!-- Navigation -->
-    <header>
+    <header id="feedbackHeader">
       <section class="navbar">
         <div class="logo">
           <h1>Summer<span>Escapes</span></h1>
@@ -44,33 +44,36 @@
 
     <!-- Form -->
     <section class="content" id="feedbackForm">
+      <h4>Fill out a quick survey below!</h4>
       <form action="/action_page.php" method="get">
 
-        <div class="input-field">
-          <label class="title" for="radio-buttons">How likely are you to recommend Summer Escapes to a friend or colleague?</label>
-          <ul id="radio-buttons">
-            <li><input type="radio" name="recommondation" id="high" value="high" checked="checked" /><label for="highest">Very Likely</label></li>
-            <li><input type="radio" name="recommondation" id="high" value="high" /><label for="high">Likely</label></li>
-            <li><input type="radio" name="recommondation" id="low" value="low" /><label for="low">Unlikely</label></li>
-            <li><input type="radio" name="recommondation" id="lowest" value="lowest" /><label for="lowest">Very Unlikely</label></li>
-          </ul>
-        </div>
+        <article id="survey">
+          <div class="input-field">
+            <label class="title" for="radio-buttons">How likely are you to recommend Summer Escapes to a friend or colleague?</label>
+              <ul id="radio-buttons">
+                <li><input type="radio" name="recommondation" id="high" value="high" checked="checked" /><label for="highest">Very Likely</label></li>
+                <li><input type="radio" name="recommondation" id="high" value="high" /><label for="high">Likely</label></li>
+                <li><input type="radio" name="recommondation" id="low" value="low" /><label for="low">Unlikely</label></li>
+                <li><input type="radio" name="recommondation" id="lowest" value="lowest" /><label for="lowest">Very Unlikely</label></li>
+            </ul>
+          </div>
 
-        <div class="input-field">
-          <label class="title" for="textReview">Write a Quick Review</label>
-          <textarea id="textReview" cols="25s" placeholder="Write a review..." required></textarea>
-        </div>
+          <div class="input-field">
+            <label class="title" for="textReview">Write a Quick Review</label>
+            <textarea id="textReview" cols="25s" placeholder="Write a review..." required></textarea>
+          </div>
 
-        <div class="input-field">
-          <label class="title" for="select">How would you rate our website from 1 to 5?</label>
-          <select id="rating">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5" selected>5</option>
-          </select>
-        </div>
+          <div class="input-field">
+            <label class="title" for="select">How would you rate our website from 1 to 5?</label>
+            <select id="rating">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5</option>
+            </select>
+          </div>
+        </article>
 
         <div id="submitButton">
           <input id="submit" type="submit" value="Submit" />
