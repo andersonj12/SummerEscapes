@@ -226,6 +226,8 @@ header {
 
 .rev-photo {
 	width: 45%;
+	object-fit: cover;
+	height: 100%;
 	border-radius: 2.5px;
 }
 
@@ -250,8 +252,12 @@ header {
 	margin-bottom: 0.5em;
 }
 
-.info-list p {
-	line-height: 1.5
+.info-list ul li {
+	margin-bottom: 1em;
+}
+
+.list-header {
+	font-weight: bold;
 }
 
 .review {
@@ -268,11 +274,15 @@ header {
 	align-content: flex-start;
 }
 
+button {
+	font-family: 'Assistant', sans-serif;
+}
+
 .button-list button {
 	background-color: #4A809E;
 	border-style: none;
 	border-radius: 2.5px;
-	font-size: 15px;
+	font-size: 18px;
 	padding: 0.5em 1em 0.5em 1em;
 	color: #FFF;
 	margin-right: 1em;
@@ -375,9 +385,10 @@ form {
 	background-color: #4A809E;
 	padding: 0.5em 1.5em 0.5em 1.5em;
 	border-style: none;
-	font-size: 16px;
+	font-size: 18px;
 	color: #FFF;
   border-radius: 5px;
+	font-family: 'Assistant', sans-serif;
 }
 
 #submitButton {
@@ -401,15 +412,167 @@ footer {
 	width: 100%;
 	background-color: #4A809E;
 	margin-top: 5em;
-	height: 75px;
+	height: auto;
 	display: flex;
 	justify-content: flex-end;
+	padding: 2.5em 0 0.5em 0;
 }
 
 .copyright {
 	color: #FFF;
 	font-size: 12px;
-	margin: 50px 15px 0 0;
 	font-weight: lighter;
 	opacity: 0.5;
+	height: auto;
+	margin-right: 0.5em
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	.info-list {
+	  font-size: 16px;
+	}
+
+	#feedbackForm {
+		width: 75%;
+	}
+
+	#contactBanner {
+		margin-bottom: 2em;
+	}
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+   * {
+		 font-size: 16px;
+	 }
+
+	 .no-mobile {
+		 display: none;
+	 }
+
+	.logo h1 {
+		font-size: 60px;
+	}
+
+	.logo {
+		margin-left: 0.5em;
+	}
+
+	.nav li a {
+		font-size: 16px;
+	}
+
+	.nav li {
+		margin: 0.5em;
+  }
+
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.moreInfo a {
+		font-size: 16px;
+	}
+
+	.destInfo {
+		margin: 0 0 1em 0;
+	}
+
+	.photo {
+		width: 90%;
+		margin: 1.5em 0 0.5em 0;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+  .loadButton button {
+		font-size: 16px;
+	}
+	.button-list button {
+		font-size: 16px;
+		margin-bottom: 1em;
+	}
+
+	footer {
+		padding-top: 1.5em;
+		justify-content: center;
+		margin-top: 4em;
+	}
+
+	header {
+		margin-bottom: 2em;
+	}
+
+	.item {
+		width: 90%;
+		padding: 1em 0 0 0;
+	}
+
+	.subject-info {
+		flex-flow: column nowrap;
+		align-items: center;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.rev-photo {
+		width: 90%;
+	}
+
+	.info-list {
+		width: 90%;
+	}
+
+	.info-list ul li {
+		font-size: 16px;
+		margin-bottom: 1em;
+	}
+
+	#feedbackBanner {
+		margin-top: 3em;
+		width: 90%;
+	}
+
+	#feedbackBanner .page-desc {
+		width: 100%;
+	}
+
+	#feedbackForm {
+		width: 90%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	#survey div {
+		flex-flow: column nowrap;
+	}
+
+	label {
+		font-size: 18px;
+	}
+
+	.title {
+		margin-bottom: 1em;
+		font-size: 18px;
+	}
+
+	#contactBanner {
+		margin-bottom: 2em;
+	}
+}
+
+@media (max-width: 1024px) {
+	body {
+		width: 100%;
+	}
 }
