@@ -350,6 +350,18 @@ form {
 	margin-bottom: 2em;
 }
 
+.h4 {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 0.5em;
+	display: block;
+}
+
+.h5 {
+	font-size: 18px;
+	display: block;
+}
+
 .mediaTag img {
 	border-style: none;
 	height: 40px;
