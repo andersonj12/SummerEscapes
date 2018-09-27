@@ -39,35 +39,34 @@
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit risus facilisi, cursus tempus duis enim ligula ac convallis sociis varius sollicitudin, pharetra et praesent</p>
       </div>
       <aside class="gallery no-mobile">
-        <img src="images/feedback.png" alt="Survey sheet" />
+        <img src="images/feedback.png" alt="Survey sheet pic" />
       </aside>
     </section>
 
     <!-- Form -->
     <section class="content" id="feedbackForm">
-      <h4>Fill out a quick survey below!</h4>
+      <h3 class="prep">Fill out a quick survey below!</h3>
       <form action="/action_page.php" method="get">
 
         <article id="survey">
-          <h3>Feedback Survey</h3>
-          <div class="input-field">
-            <label class="title">How likely are you to recommend Summer Escapes to a friend or colleague?</label>
-            <ul id="radio-buttons">
+          <h4>Feedback Survey</h4>
+          <fieldset id="radio-buttons" class="input-field">
+            <legend class="title">How likely are you to recommend Summer Escapes to a friend or colleague?</legend>
+            <ul>
               <li><input type="radio" name="recommondation" id="highest" value="highest" checked="checked" /><label for="highest">Very Likely</label></li>
               <li><input type="radio" name="recommondation" id="high" value="high" /><label for="high">Likely</label></li>
               <li><input type="radio" name="recommondation" id="low" value="low" /><label for="low">Unlikely</label></li>
               <li><input type="radio" name="recommondation" id="lowest" value="lowest" /><label for="lowest">Very Unlikely</label></li>
-            </ul>
+          </fieldset>
+
+          <div class="input-field">
+            <label class="title" for="textReview">Write a Quick Review</label>
+            <textarea id="textReview" cols="25" placeholder="Write a review..."></textarea>
           </div>
 
           <div class="input-field">
-            <label class="title">Write a Quick Review</label>
-            <textarea id="textReview" cols="25" placeholder="Write a review..." required></textarea>
-          </div>
-
-          <div class="input-field">
-            <label class="title">How would you rate our website from 1 to 5?</label>
-            <select id="rating">
+            <label class="title" for="rating">How would you rate our website from 1 to 5?</label>
+            <select id="rating" required>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -88,7 +87,7 @@
     <!-- Footer -->
     <footer>
       <div class="copyright">
-        <h6>Copyright (c) 2018 Summer Escapes All Rights Reserved.</h6>
+        <h5>Copyright (c) 2018 Summer Escapes All Rights Reserved.</h5>
       </div>
     </footer>
 
