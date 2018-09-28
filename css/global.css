@@ -305,8 +305,8 @@ header {
 	color: #FFE5C4;
 }
 
-.info-list h2 {
-	margin-bottom: 0.5em;
+.info-list h4 {
+	margin: 0.5em 0 0.5em 0;
 }
 
 .info-list ul li {
@@ -351,7 +351,7 @@ button {
 /* Content (Feedback */
 
 #feedbackForm {
-	width: 50%;
+	width: 60%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -363,10 +363,6 @@ button {
 	margin-top: 2em;
 	-ms-flex-item-align: center;
 	    align-self: center;
-}
-
-#radio-buttons {
-	display: flex;
 }
 
 #survey {
@@ -386,6 +382,15 @@ button {
 #survey h4 {
 	margin-bottom: 1em;
 	font-size: 24px;
+}
+
+legend.title {
+	display: inline;
+	float: left;
+}
+
+fieldset ul {
+	display: inline;
 }
 
 #survey div, #survey fieldset {
@@ -416,7 +421,7 @@ form {
 .title {
 	font-size: 20px;
 	font-weight: bold;
-	max-width: 50%;
+	max-width: 300px;
 	margin-right: 0.5em;
 	opacity: 0.75;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
@@ -484,7 +489,7 @@ form {
 	margin: 0 0.5em 0 0.5em;
 }
 
-.mediaTag h5 {
+.mediaTag h4 {
 	font-size: 16px;
 }
 
@@ -556,13 +561,16 @@ footer {
 }
 
 .copyright {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	height: auto;
+	margin-right: 0.5em
+}
+
+.copyright h5 {
 	color: #FFF;
 	font-size: 12px;
 	font-weight: lighter;
 	opacity: 0.5;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	height: auto;
-	margin-right: 0.5em
 }
 
 /* Media Queries */
@@ -696,13 +704,23 @@ footer {
 		width: 90%;
 	}
 
+	legend.title {
+		float: none;
+		max-width: 100%;
+		margin-right: 0;
+	}
+
 	form {
 		width: 100%;
 	}
 
-	#survey div {
+	#survey div, #survey fieldset {
 		-ms-flex-flow: column nowrap;
 		    flex-flow: column nowrap;
+	}
+
+	#survey fieldset {
+		padding-top: 0;
 	}
 
 	label {
